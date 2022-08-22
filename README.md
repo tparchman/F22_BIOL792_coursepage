@@ -33,17 +33,17 @@ start working more confidently with Unix and Python. We will emphasize tools oft
 
 * **Practical computing for biologists** Haddock, S.H.D. and Dunn, C.W., 2011. Sunderland, MA, USA: Sinauer Associates. The book provides an excellent guide to the much of content of the course, is filled with excellent examples and problems, and will also be utilized in Data Science for Biology II during spring semesters.
 
-* **Computer with Unix/Linus operating system** Students with
+* **Computer with Unix/Linux operating system** Students with
   Mac computers already have machines running Unix and
   are ready to go. Same goes for students running Linux (Ubuntu, Centos, etc.). Students using computers running a windows OS or will need to figure out how to install Linux or a Linux emulator on their machine. 
 
-* **Supplemental primers, readings and assignments** will be announced during the class and provided on the [course github page](https://github.com/tparchman/BIOL792_course_site).
+* **Supplemental primers, readings and assignments** will be announced during the class and provided on the [course github page](https://github.com/tparchman/F22_BIOL792_coursepage).
 
 ## Course Format
 We will meet twice a week (Tues/Thurs 6:00-7:15) but I typically reserve two hours of time during each window to allow discusion/troubleshooting on coding related to assignments and independent projects. At the beginning of each class, I will introduce new concepts and material that will form the basis of the exercises, assignments, or projects we will work through that week. We will cover questions regarding previous material, and then you will spend at least half of each class working independently, or in small groups, on writing code. All students should come to class having thoroughly read the assigned material and prepared to try new coding exercises. We plan to hold class in person this semester, but will have contingency plans in place for covid19 scenarios. Regardless, we will use zoom meetings each class meeting for two reasons. **First**, we will use zoom so that students can share their screens with me and the rest of the class while working through/trouble shooting code. **Second**, by using recorded zoom meetings for each class session, students that might not be able to make an in person meeting will be able to participate and review recorded class period content with no consequences. In other words, if you are having a busy evening, or might be coming down with symptoms of covid19 or even just a minor cold, there will be no cost to participating remotely, rather than in person.
 
 ## Course Material Repositoy
-All readings, primers, problem set instructions, datasets, as well as ample supplemental materials will be available on the [course github page](https://github.com/tparchman/F21_BIOL792_coursepage). This will include primers for Unix and Python content, and additional resources for learning more about Python, Unix, and genomic workflows, and information and data sets related to assignments. 
+All readings, primers, problem set instructions, datasets, as well as ample supplemental materials will be available on the [course github page](https://github.com/tparchman/F22_BIOL792_coursepage). This will include primers for Unix and Python content, and additional resources for learning more about Python, Unix, and genomic workflows, and information and data sets related to assignments. 
 
 ## Grades
 
@@ -66,13 +66,10 @@ Your grade in this course will be based on the following:
 
 
 
-
-
-
 ## University Policies
 ### **Dropping/Withdrawing**
-Last day to drop a class and receive a full refund: Sep. 1, 2021\
-**Final day to withdrawal from classes (W, no refund): Oct. 27, 2021**
+Last day to drop a class and receive a full refund: Sep. 9, 2022\
+**Final day to withdrawal from classes (W, no refund): Nov. 2, 2021**
 
 
 ### **Incomplete Grade**
@@ -105,21 +102,6 @@ access to educational opportunities. For assistance, contact the
 Disability Resource Center (DRC) at 784-6000 to determine eligibility
 and appropriate accommodations.
 
-### **Statement on COVID-19 Face Coverings**
-In response to COVID-19, and in alignment local, state, and U.S. Center for Disease Control guidelines, face coverings are required at all times in all University indoor public spaces, including classroom, laboratory, studio, creative space, or any type of in-person instructional activity, and public spaces. Furthermore, individuals who have not been fully vaccinated against COVID 19 are required to wear a face covering at all times while on campus, including all indoor and outdoor public spaces.
-
-A “face covering” is defined as a “covering that fully covers a person’s nose and mouth, including without limitation, cloth face mask, surgical mask, towels, scarves, and bandanas” (State of Nevada Emergency Directive 024).
-
-Students that cannot wear a face covering due to a medical condition or disability, or who are unable to remove a mask without assistance may seek an accommodation through the Disability Resource Center.
-
-### **Statement on COVID-19 Social Distancing**
-
- In alignment with State of Nevada guidelines, social distancing is no longer required.
-
-
-### **Statement on COVID-19 Disinfecting Your Learning Space**
-
-Disinfecting supplies are provided for you to disinfect your learning space. You may also use your own disinfecting supplies.
 
 ### **Statement on COVID-19, COVID-19 Like Symptoms, and Contact with Someone Testing Positive for COVID-19**
 
@@ -127,26 +109,26 @@ Students testing positive for COVID 19, exhibiting COVID 19 symptoms regardless 
 
 ### **Accommodations for COVID 19 Quarantined Students**
 
-For students who are required to quarantine or self-isolate due to 1) COVID 19 infection or 2) exposure while not vaccinated, instructors must provide opportunities to make-up missed course work, including assignments, quizzes or exams. In courses with mandatory attendance policies, instructors must not penalize students for missing classes while quarantined.
+For students who are quarantining or self-isolating due to 1) COVID 19 infection or 2) exposure while not vaccinated, instructors must provide opportunities to make-up missed course work, including assignments, quizzes or exams. In courses with mandatory attendance policies, instructors must not penalize students for missing classes while quarantined.
 
 ## SCHEDULE
 *Tentative Course Schedule. All contents are subject to change.
 
 | Week    |  Date          |  Class                         |  Due          |
 | ------- | ---------------| ------------------------------ | ------------- |
-| Week 1  | Aug. 24, 26    | Course introduction, Unix I    | 
-| Week 2  |	Aug. 31, Sep. 2      | Unix II                        |               |
-| Week 3  |	Sep. 7, 9	   | Unix III                       | Homework 1   |
-| Week 4  |	Sep. 14, 16	   | Unix IV                        | Homework 2   |
-| Week 5  |	Sep. 21, 23	   | Python I                       | Homework 3;  *1-2 page project description | 
-| Week 6  |	Sep. 28, 30| Python II	                    | Homework 4     
-| Week 7  |	Oct. 5, 7	   | Python III                     | Homework 5
-| Week 8  |	Oct. 12, 14	   | Python IV                      | Homework 6 |
-| Week 9  |	Oct. 19,21	   | Python V	                    | Homework 7 |  
-| Week 10 |	Oct. 26, 28	   | Python VI                      | Homework 8 |
-| Week 11 | Nov. 2, 4      | Python VII                     | Homework 9 |
-| Week 12 | Nov. 9, 11    | Population genetics workflow   | nothing |
-| Week 13 | Nov. 16, 18	   | Population genetics cont.  | nothing
-| Week 14 | Nov. 23	       | HPC/Pronghorn/Project prep | 
-| Week 15 | Nov. 30, Dec. 2	   | Project prep/presentation  | Homework 10, projects due
-| Week 16 | Dec. 8	       | Present Projects		          |   *projects due
+| Week 1  | Aug. 30, Sep. 1    | Course introduction, Unix I    | 
+| Week 2  |	Sep. 6, Sep. 8      | Unix II                        |               |
+| Week 3  |	Sep. 13, 15	   | Unix III                       | Homework 1   |
+| Week 4  |	Sep. 20, 22	   | Unix IV                        | Homework 2   |
+| Week 5  |	Sep. 27, 29	   | Python I                       | Homework 3;  *1-2 page project description | 
+| Week 6  |	Oct. 4, 6           | Python II	                    | Homework 4     
+| Week 7  |	Oct. 11, 13	   | Python III                     | Homework 5
+| Week 8  |	Oct. 18, 20	   | Python IV                      | Homework 6 |
+| Week 9  |	Oct. 25, 27	   | Python V	                    | Homework 7 |  
+| Week 10 |	Nov. 1, 3	   | Python VI                      | Homework 8 |
+| Week 11 | Nov. 8, 10      | Python VII                     | Homework 9 |
+| Week 12 | Nov. 15, 17    | Population genetics workflow   | nothing |
+| Week 13 | Nov. 22	   | Population genetics cont.  | nothing
+| Week 14 | Nov. 29, Dec. 1	       | HPC/Pronghorn/Project prep | 
+| Week 15 | Dec. 6,	8   | Project prep/presentation  | Homework 10, projects due
+| Week 16 | Dec. 13	       | Present Projects		          |   *projects due
