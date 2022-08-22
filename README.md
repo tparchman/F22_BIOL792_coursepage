@@ -69,7 +69,7 @@ Your grade in this course will be based on the following:
 ## University Policies
 ### **Dropping/Withdrawing**
 Last day to drop a class and receive a full refund: Sep. 9, 2022\
-**Final day to withdrawal from classes (W, no refund): Nov. 2, 2021**
+**Final day to withdrawal from classes (W, no refund): Nov. 2, 2022**
 
 
 ### **Incomplete Grade**
