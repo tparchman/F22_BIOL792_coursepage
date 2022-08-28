@@ -47,7 +47,7 @@ You can can customize the way a command works from shell by creating an **alias*
 
     $ alias ls = 'ls -lh'
 
-When you do this, it will only work from within a single terminal session. Once you get more comfortable in Unix, you will likely want to customize the behavior of your shell uniformly. This can easily be done by modifying a file, `.zshrc` (or depending on flavor of Unix/Linux you are running: `.bashrc`, `.profile` or `.bash_profile`), that resides in your home directory. The `.` before the file names here renders them 'hidden'. Thus, to move to your home directory and look for these types of files use:
+When you do this, it will only work from within a single terminal session. Once you get more comfortable in Unix, you will likely want to customize the behavior of your shell uniformly. This can easily be done by modifying a file, `.zshrc` (or depending on flavor of Unix/Linux you are running: `.bashrc`, `.profile` or `.bash_profile`), that resides in your home directory. The `.` before the file names here renders them 'hidden'. Thus, to move to your home directory and look for these types of files use (note the -a option is shorthand for all, so it shows the hidden files as well):
 
     $ cd ~
     $ ls -a
@@ -58,7 +58,7 @@ When you do this, it will only work from within a single terminal session. Once 
 
 - If you are running Ubuntu Linux, check which terminal application you are using and consult google.
 
-I'd suggest the following alias's, or atleast this is what I use.
+I'd suggest the following alias's, or atleast this is similar to what I use:
 
     # helpful alias collection
     alias python='python3'
@@ -79,6 +79,10 @@ Go to your home directory:
 View hidden files:
 
     $ ls .*
+
+Note the above option will show just files that begin with `.`. If you wanted to see all files, regardless of whether they start with `.` or not, you could use:
+
+    $ ls -a
 
 If you dont have `.zshrc`, `.bashrc`, `.bash_profile` or `.profile`, make one and open:
 

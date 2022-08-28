@@ -27,7 +27,12 @@ For the first section of the course, we will have weekly Unix worksheets or assi
 
 If you have an apple computer, you already own a unix machine. Just go into the Utilities directory, within the Application directory, and you will find the Terminal app. I suggest dragging that to your dock or wherever you organize applications you use frequently. For this class, having an apple computer will be the easiest way forward as your computer is ready to go and the examples in the book are written as they appear in this environment. For a brief history of Unix and its significance, as well as an alternative introduction to basic commands and ideas, see [Unix primer](https://github.com/tparchman/BIOL792/blob/master/unix_resources/unix_buerkle_guide.pdf) written by Alex Buerkle at University of Wyoming.
 
-If you use a windows computer, a bit of adjustment will be necessary, but you have several options. You can Install Cygwin — this provides a Linux-like environment on your PC. Alternatively, and preferably, you can [install ubuntu](https://practicalcomputing.org/ubuntu.html) linux alongside or within your windows operating system. **Appendix 1** of Haddock and Dunn explains in general detail how to install ubuntu linux on an windows operating system using a virtual machine.
+If you use a windows computer, a bit of adjustment will be necessary, but you have several options. You can Install Cygwin — this provides a Linux-like environment on your PC. Alternatively, and preferably, you can  install ubuntu linux alongside or within your windows operating system. **Appendix 1** of Haddock and Dunn explains in general detail how to install ubuntu linux on an windows operating system using a virtual machine. Here are a few resources for installing Ubuntu:
+
+- [install ubuntu desktop](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
+
+- [install ubuntu through virtual box](https://practicalcomputing.org/ubuntu.html) (following Haddock and Dunn)
+
 
 ## 3. Big data: text processing and manipulation
 Most big data is stored as text, or compressed text files. Text is special  binary format of storing data whose numbers correspond to human readable digits, letters or characters. This is the most transparent and transportable way to store data, and is hence the medium of big data. 
@@ -104,6 +109,8 @@ To move that file to the directory above
 
     $ mv test1.txt ../
 
+When you run the above actions, you may or may not see that the system will prompt you with questions asking if you are sure you want to overwrite already existing files with the same name. Think about this for a minute, we will cover options for customizing these operations to avoid such asks when useful.
+
 The current, or working directory, is simply indicated by `.`. So to move the file that you moved up one directory with the previous command back to the directory you are in
 
     $ mv ../test1.txt .
@@ -124,7 +131,7 @@ To remove that same directory
 
 ## 7. Unix directory tree
 
-The Unix directory tree is heirarchical and simple to navigate. The more you use your terminal to navigate your file system, the more you will realize how much time you waste using your mouse and an application such as finder or windows explorer. Eventually you will accept the fact that the terminal is a much much faster way to move around your system, and will hopefully make that transition in the name of efficiency. The Unix file system:
+The Unix directory tree is heirarchical, sensible, and simple to navigate. The more you use your terminal to navigate your file system, the more you will realize how much time you waste using your mouse and an application such as finder or windows explorer. Eventually you will accept the fact that the terminal is a much much faster way to move around your system, and will hopefully make that transition in the name of efficiency. The Unix file system:
 
 ![unixtree](https://github.com/tparchman/BIOL792/tree/master/images/unixtree.png)
 
@@ -133,7 +140,7 @@ root is the top of the tree, all other directories reside within root. You can m
 
     $ cd /
 
-Unix systems are multi-user. When you login with a username and password, you have your own home directory that resides at /Users/. You can move directly to your home directory from anywhere with the two shortcuts below.
+Unix systems are multi-user. When you login with a username and password, you have your own home directory that resides under /Users/. You can move directly to your home directory from anywhere with the two shortcuts below.
 
     $ cd ~
 
@@ -175,7 +182,7 @@ For this course, downloading individual files might suffice. But if you would li
 **hint:** make a directory somewhere on your computer for this workshop. Run below command in that directory.
 
 ```
-git clone https://github.com/tparchman/F21_BIOL792_coursepage
+git clone https://github.com/tparchman/F22_BIOL792_coursepage
 ```
 
 **note:** I will be updating the course on a near weekly basis. Thus, you will likely want to update this directory using additional `git` commands
