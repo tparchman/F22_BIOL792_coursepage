@@ -84,7 +84,7 @@ Note the above option will show just files that begin with `.`. If you wanted to
 
     $ ls -a
 
-If you dont have `.zshrc`, `.bashrc`, `.bash_profile` or `.profile`, make one and open:
+If you do not have `.zshrc`, `.bashrc`, `.bash_profile` or `.profile`, make one and open:
 
     $ touch .bash_profile
     $ open .bash_profile
