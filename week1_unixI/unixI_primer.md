@@ -9,11 +9,11 @@
 ## Overview
 We will start by getting set up for the course. First, we will make sure everyone has Unix or Linux running on their computers. Second, we will choose a text editor to use for this course and for writing and editing code in general.
 
-We will then get started on learning basic Unix commands which you are likely to use frequently. We will gain deeper familiarity with directory structure, how to navigate through this structure, view contents of directories and files, and learn to make, copy, or delete files and directories.
+We will then get started on learning basic Unix commands which you are likely to use frequently. We will gain deeper familiarity with directory structure, how to navigate through this structure, view contents of directories and files, and learn to make, copy, or delete files and directories. 
 
 ## 1. Text display in these primers
 
-Text that is meant to serve as an example for what to type into a terminal window or into python scripts will be indented and highlighted straight form text as below. So when you see this, you are seeing text that in many cases can be copied and pasted, for example, into your terminal window. 
+Text that is meant to serve as an example for what to type into a terminal window or into python scripts will be indented and highlighted straight form text as below. So when you see this, you are seeing text that in many cases can be copied and pasted, for example, into your terminal window. Throughout, the `$` signifies the unix command line prompt. Thus, the code box below is demonstrating the command `ls -lrh` typed from the prompt.
 
        $ ls -lrh
 
