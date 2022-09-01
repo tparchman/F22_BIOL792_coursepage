@@ -179,7 +179,7 @@ While you can download indidvidual files from github using your preferred web br
 
 For this course, downloading individual files might suffice. But if you would like to download the entire repo, you can do so through the command line using the below command:
 
-**hint:** make a directory somewhere on your computer for this workshop. Run below command in that directory.
+**hint:** make a directory somewhere on your computer for this course. Run below command in that directory.
 
 ```
 git clone https://github.com/tparchman/F22_BIOL792_coursepage
