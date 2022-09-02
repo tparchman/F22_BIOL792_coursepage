@@ -25,7 +25,7 @@ For the first section of the course, we will have weekly Unix worksheets or assi
 
 ## 2. Where can you run Unix?
 
-If you have an apple computer, you already own a unix machine. Just go into the Utilities directory, within the Application directory, and you will find the Terminal app. I suggest dragging that to your dock or wherever you organize applications you use frequently. For this class, having an apple computer will be the easiest way forward as your computer is ready to go and the examples in the book are written as they appear in this environment. For a brief history of Unix and its significance, as well as an alternative introduction to basic commands and ideas, see [Unix primer](https://github.com/tparchman/BIOL792/blob/master/unix_resources/unix_buerkle_guide.pdf) written by Alex Buerkle at University of Wyoming.
+If you have an apple computer, you already own a unix machine. Just go into the Utilities directory, within the Application directory, and you will find the Terminal app. I suggest dragging that to your dock or wherever you organize applications you use frequently. For this class, having an apple computer will be the easiest way forward as your computer is ready to go and the examples in the book are written as they appear in this environment. 
 
 If you use a windows computer, a bit of adjustment will be necessary, but you have several options. You can Install Cygwin — this provides a Linux-like environment on your PC. Alternatively, and preferably, you can  install ubuntu linux alongside or within your windows operating system. **Appendix 1** of Haddock and Dunn explains in general detail how to install ubuntu linux on an windows operating system using a virtual machine. Here are a few resources for installing Ubuntu:
 
@@ -33,6 +33,11 @@ If you use a windows computer, a bit of adjustment will be necessary, but you ha
 
 - [install ubuntu through virtual box](https://practicalcomputing.org/ubuntu.html) (following Haddock and Dunn)
 
+- [install git-bash](https://www.atlassian.com/git/tutorials/git-bash#:~:text=What%20is%20Git%20Bash%3F,operating%20system%20through%20written%20commands) GitBash is easy to install and get working. However, the full ubuntu linux install would be much preferable. GitBash has most of the functionality of linux but not all, thus a full ubuntu linux install would be preferable. 
+
+
+
+For a brief history of Unix and its significance, as well as an alternative introduction to basic commands and ideas, see [Unix primer](https://github.com/tparchman/BIOL792/blob/master/unix_resources/unix_buerkle_guide.pdf) written by Alex Buerkle at University of Wyoming. This is **highly recommended** reading.
 
 ## 3. Big data: text processing and manipulation
 Most big data is stored as text, or compressed text files. Text is special  binary format of storing data whose numbers correspond to human readable digits, letters or characters. This is the most transparent and transportable way to store data, and is hence the medium of big data. 
@@ -45,9 +50,9 @@ Programs are typically just text files; they contain text written commands for 	
 
 Text editors for working with data or programming fill several necessities for data science.
 
-- They are empowered with tools for the searching and manipulation of data. For example, any worthy text editor is equipped with mechanisms for searching/replacing data based on flexible pattern matching. The representation of such patterns, otherwise known as **regular expressions** is a major feature of TextWrangler and other editors, and is also a major component of programming in Python or other scripting languages.
+- They are empowered with tools for the searching and manipulation of data. For example, any worthy text editor is equipped with mechanisms for searching/replacing data based on flexible pattern matching. The representation of such patterns, otherwise known as **regular expressions** is a major feature of TextWrangler and other editors, and is also a major component of programming in Python or other scripting languages. Chapters 2 and 3 of Haddock and Dunn introduce regular expression and their usage in the text editor `TextWrangler`. Reading this might be useful, but no need to worry as we will dive deeper into regular expressions with Unix tools and especially in Python.
 
-- Text editors  have syntax recognition which colors text with different functions and purposes accordingly. This is invaluable for troubleshooting code. Common text editors include `TextWrangler`, `Visual Studio Code`, `Sublime`, `Emacs`, `VIM`. I suggest `TextWrangler` for this course because your book utilizes this editor, and because it employes keyboard shortcuts as you are likely accustomed (Emacs and VI are very popular, but youd have to learn new keyboard shortcuts). You should install and be comfortable with one before the next class.
+- Text editors  have syntax recognition which colors text with different functions and purposes accordingly. This is invaluable for troubleshooting code. Common text editors include `BBedit`, `TextWrangler`, `Visual Studio Code`, `Sublime`, `Emacs`, `VIM`. I suggest `TextWrangler` for this course because your book utilizes this editor, and because it employes keyboard shortcuts as you are likely accustomed (Emacs and VI are very popular, but youd have to learn new keyboard shortcuts). You should install and be comfortable with one before the next class.
 
 - Line endings are encoded differently for different files from different operating systems, and this can represent a stumbling block during the first weeks of learning to manipulate data with Unix and Python. Read pages 13-14 of Haddock and Dunn carefully to understand this issue, and for a quick fix in TextWrangler. We will always want to be working with Unix line endings
 
@@ -61,9 +66,9 @@ Example syntax highlighting (note this is Perl, not Python or unix)
 
 We will use the terminal for navigating and manipulating files and directories, executing Unix commands, and executing code written in Python or Bash. Conveniently, you will also use the same terminal windows to execute such work on remote servers or HPC (High Performance Computing) systems. In general, we will learn how to use the terminal to increase efficiency in handling, manipulating, and analyzing large data.
 
-If you have a mac, go into the Utilities directory, within the Application directory, and you will find the Terminal app. I suggest dragging that to your dock or wherever you organize applications you use frequently. See appendix 1 of Haddock and Dunn for orienting in Unix from a Windows OS.
+If you have a mac, go into the Utilities directory, within the Application directory, and you will find the Terminal app. I suggest dragging that to your dock or wherever you organize applications you use frequently. See appendix 1 of Haddock and Dunn for orienting in Unix from a PC.
 
-You can have as many terminal windows open at a time as like, and you can customize the look and behavior of the terminal. For example:
+You can have as many terminal windows open at a time as you like, and you can customize the look and behavior of the terminal. For example:
 
 
 - make the text larger/smaller (hold down ‘command’ and either ‘+’ or ‘–’)
@@ -85,7 +90,7 @@ Most Unix commands also have command line options, or **arguments**, which follo
 
 An **argument** is anything, generally speaking, specified after a command or executable script. It could be a command line option as above, or it could be a file meant to be processed by a Python, Bash, or Perl script.
 
-You can move around directories using the `cd` command
+You can move around directories using the `cd` command (cd is short for change directory)
 
     $ cd [name of directory within the directory you are in]
 
@@ -188,10 +193,10 @@ git clone https://github.com/tparchman/F22_BIOL792_coursepage
 **note:** I will be updating the course on a near weekly basis. Thus, you will likely want to update this directory using additional `git` commands
 
 
-
-## Additional useful Unix resources, materials to keep close
+## To prepare for next week and beyond:
 
 - quick guides to basic Unix commands can be found in [Appendix 2](https://github.com/tparchman/BIOL792/blob/master/unix_resources/Haddock_and_Dunn_quickguide_Appendices.pdf) of Haddock and Dunn and the course page has numerous 'cheat 'sheets' under unix_resources, such as this [unix cheat sheet](https://github.com/tparchman/BIOL792/blob/master/unix_resources/unix_cheat_sheet.pdf). These will be extremely useful.
+
 - Useful primer from "Unix and Perl to the Rescue", by Bradnam and Korf. For this course, the [unix_primer](http://korflab.ucdavis.edu/Unix_and_Perl/current.html) is hard to beat. Please bookmark this and get familiar with part 1 and part 2.
 
 - Also, please have a look at the excellent [tutorial from software carpentry](http://swcarpentry.github.io/shell-novice/). For this week and next, follow steps 1 through 3.
