@@ -156,4 +156,3 @@ Lastly for our first week, work through the first two sections of this tutorial 
 
 - quick guides to basic Unix commands can be found in [Appendix 2](https://github.com/tparchman/BIOL792/blob/master/unix_resources/Haddock_and_Dunn_quickguide_Appendices.pdf) of Haddock and Dunn and the course page has numerous 'cheat 'sheets' under unix_resources, such as this [unix cheat sheet](https://github.com/tparchman/BIOL792/blob/master/unix_resources/unix_cheat_sheet.pdf). These will be extremely useful.
 
-Also, please have a look at the excellent [tutorial from software carpentry](http://swcarpentry.github.io/shell-novice/). For this week and next, follow steps 1 through 3.
