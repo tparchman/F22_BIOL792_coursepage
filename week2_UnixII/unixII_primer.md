@@ -26,7 +26,16 @@ Try:
 
     $ man grep
 
-Here you will see the information on grep displayed in a text viewer called `less`. You can move forward one page at a time with the space bar, back a page with `b`. Upon scrolling through the `grep` `man` page, you will see that `grep` has many command options and is a flexible, powerful, and commonly used text processing tool.
+Here you will see the information on grep displayed in a text viewer called `less`. You will use `less` frequently, so here are some keys to making it efficient:
+
+* `spacebar` will scroll forward a page 
+* `b` will scroll up a page
+* `q` to exit less and regain the terminal prompt 
+* `/` to search file for pattern. 
+* when in pattern search mode, `n` skips to next match, `N` skips to previous match
+
+
+Upon scrolling through the `grep` man page, you will see that `grep` has many command options and is a flexible, powerful, and commonly used text processing tool.
 
 
 Most commands also have command line options, which follow `-` after the command. Try `ls` below with the additional options h or l, which could be specified in either format shown below
