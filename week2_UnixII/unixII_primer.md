@@ -15,7 +15,7 @@
 <p>&nbsp;</p>
 
 ## 1. `man` pages and command line options
-For any Unix command (there are tens of thousands) you can find the full information on that command by using  `man` (manual pages, essentially).
+For any Unix command (there are tens of thousands) you can find the full information on that command by using  `man` (manual pages, essentially). We will get introduced to 15-25 commonly used unix commands today, looking at `man` pages is one way to learn about the flexibility and various command line options.
 
 For example:
 
@@ -43,7 +43,7 @@ Most commands also have command line options, which follow `-` after the command
     $ ls -l -h
     $ ls -lh
 
-Now, notice that when you use `man`, all of the command line options will be clearly listed and efficiently described. Try the below for command line option explanations for `ls`.
+Notice that when you use `man`, all of the command line options will be clearly listed and efficiently described. Try the below for command line option explanations for `ls`.
 
     $ man ls
 
@@ -61,7 +61,7 @@ When you do this, it will only work from within a single terminal session. Once 
     $ cd ~
     $ ls -a
 
-- If you are running a newer Mac OS, you are probably running the zsh terminal application. If so, `.zshrc` is the name of the profile file. If you have one, consider adding alias's such as below. If you dont have one, use `touch` to make one, or better yet, just download the example `.zshrc` on the course github page under `unix_resources` and move to your home directory.
+- If you are running a newer Mac OS, you are probably running the zsh terminal application. If so, `.zshrc` is the name of the profile file. If you have one, consider adding alias's such as below. If you dont have one, use `touch` to make one, or better yet, just download the example `.zshrc` on the course github page under `unix_resources` or `week2_UnixII` and move to your home directory.
 
 - If you are running an older Mac OS, or just prefer bash as a terminal application, the profile information is stored in `.bash_profile` or `.bashrc`. You can create such a file and insert alias commands as below or merely change the name of the `.zshrc` file above.
 
