@@ -202,7 +202,7 @@ If you have mutliple processes running, and want to kill one, use `kill` followe
 
 ## 7. Package installation
 
-This is a bit extra for what we are doing in the GAIN module, but I thought I would add it here as a guide for those interested. For installing on your personal mac computers, `brew` will be your most convenient option. I would stress here that this type of package installer/manager makes accomplishing these tasks in the Unix OS incredibly easy.
+This is a bit extra for what we are doing this week, but I thought I would add it here as a guide for those interested. For installing on your personal mac computers, `brew` will be your most convenient option. I would stress here that this type of package installer/manager makes accomplishing these tasks in the Unix OS incredibly easy.
 
 **B. Unix on Mac Unix systems**
 

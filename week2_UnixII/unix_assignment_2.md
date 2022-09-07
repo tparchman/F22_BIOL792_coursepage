@@ -1,4 +1,4 @@
-# BIOL 792-1028. Unix week two tasks (8/26/20)
+# BIOL 792-1028. Unix week two tasks 
 
 **example files to work with:**
 passerina_sample.fastq.gz
