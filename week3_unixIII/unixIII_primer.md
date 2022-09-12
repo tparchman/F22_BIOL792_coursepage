@@ -32,7 +32,7 @@ If you have mutliple processes running, and want to kill one, use `kill` followe
 
 ### Stopping jobs, running jobs in the background
 
-If you have a job running in the shell that isnt doing what you want, you can easily kill from the terminal with "ctrl c". You can also temporarily kill it with "ctrl z", and then restart it in the background with `bg` typed at the prompt with no additional arguments necessary.
+If you have a job running in the shell that is not doing what you want, you can kill from the terminal with "ctrl c". You can also temporarily kill with "ctrl z", and then restart it in the background with `bg` typed at the prompt with no additional arguments necessary. Try this out, it will be useful in the future.
 
 If you are calling a command that is going to take some time, and you dont want it to occupy the shell you are working in, you can send it to the background with `&`. Once a job is running in the background, the job will continue once you close the terminal session or exit your connection to a remote server
 
@@ -73,9 +73,9 @@ If you are in a hurry, you can override the -i option, but be VERY careful befor
 
     $ rm -f british_PCA.jpg
 
-Lets say you used faulty code to write 600 .txt files to a directory, and you want to clean up those files before fixing your python code. `rm` only works on one file at a time. To remove them all, without being prompted with "remove N.txt?" for each file consecutively, you can execute `rm` with the the additional arguments `r` (removes file heirarchy recursively, meaning it will remove directories and all within) and `f` (without prompting for confirmation). This is the most dangerous Unix command, with no second chances, so use with **extreme caution**. To repeat, **extreme caution**.
+Lets say you used poor code to write 600 .txt files to a directory, and you want to clean up those files before fixing your python code. To remove them all, without being prompted with "remove N.txt?" for each file consecutively, you can execute `rm` with the the additional arguments `r` (removes file heirarchy recursively, meaning it will remove directories and all within) and `f` (without prompting for confirmation). This is the most dangerous Unix command, with no second chances, so use with **extreme caution**. 
 
-The below command will remove, instantly without second chances, forever, every file in the working directory that ends in txt. To repeat, **extreme caution**.
+The below command will remove, instantly without second chances, forever, every file in the working directory that ends in txt. To repeat, **extreme caution**. Below a wildcard character is used to match anything that ends in txt, but you can specify any number of things, which makes `rm -rf` a dangerous thing.
 
     $ rm -rf *txt
 <p>&nbsp;</p>
@@ -89,9 +89,9 @@ The basic use of `rysnc` might look like what you see below:
 
     $ rsync -av source_directory/ destination_directory/
 
-I like to use the command line arguments `-a` and `-v`, which invokes archive mode and increases verbosity. This will print information to the screen as copying proceeds.
+I like to use the command line arguments `-a` and `-v`, which invokes archive mode and increases verbosity. This will print information to the screen as copying proceeds. For more information on `rsync` review the manual page, or do some internet searches.
 
-A couple of minor details control the placing of directories and their contents. In the above example, there is a trailing forward slash in front of the source directory (if the directory doesn't already exist). This will write the **contents** of the source directory into the destination directory. I dont like doing that often, as it can make a mess. The below example, without the trailing `/` on the source directory will copy the directory itself (as a container) to the destination.
+A couple of minor details control the placement of directories and their contents. In the above example, there is a trailing forward slash in front of the source directory (if the directory doesn't already exist). This will write the **contents** of the source directory into the destination directory. I dont like doing that often, as it can make a mess. The below example, without the trailing `/` on the source directory will copy the directory itself (as a container) to the destination.
 
     $ rsync -av source_directory destination_directory/
 
@@ -150,7 +150,7 @@ The `chmod` command is used to alter permissions. The command can be controlled 
 | a       | All|
 <p>&nbsp;</p>
 
-We are going to try to avoid messing with permissions to much in this course, but if you go on to use remote or cluster computing systems with other groups, understanding permission in more detail is essential. There are, however, a few simple things we will do, and below are some examples. 
+We are going to try to avoid messing with permissions to much in this course, but if you go on to use remote or cluster computing systems with other groups, understanding permissions in more detail is essential. There are, however, a few simple things we will do, and below are some examples. 
 
 Convert the .sh shell script to an executable for all users.
 

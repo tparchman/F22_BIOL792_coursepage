@@ -15,7 +15,7 @@ http://korflab.ucdavis.edu/Unix_and_Perl/current.html
 
 **From here on record the commands you used for each exercise with a brief description of what it did in a file (yourlastname_unix2.txt), and keep that file in ~/BIOL792/
 
-**Starting next week (Unix 3)**, we will have you turn in a notes.txt file with your Unix commands and your explanation of how they worked. This will be a way for us to keep track assignment completion. It will also help me get an idea of where you all might be having troubles, or where you are quickly figuring out how to be extra clever. Note, I will not be 'grading' assignments for correctness. Rather, I will be reviewing them for effort and insight into progress in the class generally.
+**Starting next week (Unix 3)**, we MIGHT have you turn in a notes.txt file with your Unix commands and your explanation of how they worked. This will be a way for us to keep track assignment completion. It will also help me get an idea of where you all might be having troubles, or where you are quickly figuring out how to be extra clever. Note, I will not be 'grading' assignments for correctness. Rather, I will be reviewing them for effort and insight into progress in the class generally.
 
 ## 2. Process monitoring and control, running jobs in the background.
 
@@ -92,7 +92,7 @@ Imagine that this is data that you just got back from whatever facility you paid
     
     $
 
-**G**. Now try something more challenging: use `grep` to grab all of the sequence data information for each read belonging to the individual above (id line AND the next three lines associated with that read) and write them to a file. This file should thus contain all of the needed sequence for data the individual named "NVP_CY_48147". 
+**G**. Now try something more challenging: use `grep` to grab all of the sequence data information for each read belonging to the individual above (id line AND the next three lines associated with that read, meaning the ID line and the NEXT three lines) and write them to a file. This file should thus contain all of the needed sequence for data the individual named "NVP_CY_48147". 
 
     $
 
