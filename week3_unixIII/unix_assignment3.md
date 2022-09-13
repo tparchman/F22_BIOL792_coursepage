@@ -32,7 +32,7 @@ Lets go back to the `sample_passerina.fastq` file you were working with last wee
 
 ## 2. Pipes ("|"): moving **stdout** from one command into another.
 
-Decompress (using `gunzip`) sample_passerina.fastq.gz and try each of the commands below, striving to understand what each is doing. The sections in Haddock and Dunn, or the regular expression cheat sheat under [unix resources](https://github.com/tparchman/BIOL792/tree/master/unix_resources) on the github page, will help you understand what `^` and `[ ]` mean for regular expressions. In addition, you will want to learn what the `tr` command does.
+Decompress (using `gunzip`) sample_passerina.fastq.gz and try each of the commands below, striving to understand what each is doing. The sections in Haddock and Dunn, or the regular expression cheat sheat under [unix resources](https://github.com/tparchman/F22_BIOL792_coursepage/tree/main/unix_resources) on the github page, will help you understand what `^` and `[ ]` mean for regular expressions. In addition, you will want to learn what the `tr` command does.
 
     $ grep ^@ sample_passerina.fastq | wc -l   
 
@@ -46,9 +46,7 @@ Decompress (using `gunzip`) sample_passerina.fastq.gz and try each of the comman
 
 <p>&nbsp;</p>
 
-**2.A**. Download **yeast_genome.gff** from the [github site](https://github.com/tparchman/BIOL792/tree/master/week2_UnixII). As you have the url from the link above, use `curl` or `wget` to pull the file from where it resides online to the directory you want to work in. This is an easy way to pull data from online locations. Hint: click on the file name in the github folder, then click 'view raw' and copy the address. You may want to use `curl -o yeast_genome.gff` followed by the address so that the file has the name you want. If you use `wget` you might find this a bit easier.
-
-    $
+**2.A**. Download **yeast_genome.gff** from the [github site](https://github.com/tparchman/F22_BIOL792_coursepage/tree/main/week3_unixIII). 
 
     
 GFF file format is used extensively in bioinformatics to store information on genomic features. This file has information on transcripts from a yeast genome. The third field in each row of this file has a description of the ‘feature’ of DNA sequence to which a region belongs. Example categories would be centromere, gene, intron, and tRNA.
@@ -100,18 +98,19 @@ The dirsource directory will be made in the Deskop directory.
 	
     $
 
-## 4. Writing a useful shell scripts.
+## 4. Writing useful shell scripts.
 
-**4.** Here you will write a simple bash script for rapidly syncing your working files from a certain directory (or perhaps your entire home directory) to a flash or backup drive. This will require you to understand how to write a shell script, and how to use `rsync` (pay special attention to the delete option). The end point of this assignment should be a script that you can run from the terminal that accomplishes this job merely by typing the name of the shell and the program. You will only need two lines within the script. One will be #!/usr/bin and one will be your `rsync` command.
+Here you will write a simple bash script for rapidly syncing your working files from a certain directory (or perhaps your entire home directory) to a flash or backup drive. This will require you to understand how to write a shell script, and how to use `rsync` (pay special attention to the delete option). The end point of this assignment should be a script that you can run from the terminal that accomplishes this job merely by typing the name of the shell and the program. You will only need two lines within the script. One will be #!/usr/bin and one will be your `rsync` command. Your script should be runnable from the command line by either specifying `bash` as the interpreter: 
 
 	e.g., $ bash sync_laptop.sh
 
-or
+or by turning the script into an executable
 
+    $ chmod a+x sync_laptop.sh
     $ ./sync_laptop.sh
 
 
-For now, lets specifically write a program that syncs your BIOL792 directory with the same directory that you have created on either a flash drive, or an external hard drive at home. This program should result in the directory on your drive being updated to look exactly like the BIOL792 directory on your laptop. That is new files should be added to the destination directory and files you deleted from your laptop should be removed from the drive as well. When the program is done, it should print to the screen “Your BIOL792 work is now backed up”. You can look at slides from class to get more hints on how to do this.
+For now, lets specifically write a program that syncs your BIOL792 directory (or some other directory you would like to usefully backup) with the same directory that you have created on either a flash drive, or an external hard drive at home. This program should result in the directory on your drive being updated to look exactly like the BIOL792 directory on your laptop. That is new files should be added to the destination directory and files you deleted from your laptop should be removed from the drive as well. When the program is done, it should print to the screen “Your BIOL792 work is now backed up”. You can look at slides from class to get more hints on how to do this.
 
 Once you have tested this and are absolutely sure it is working the way you want, you could use the basic structure of the script to back up your entire home directory (or your entire computer) to a drive. 
 		
