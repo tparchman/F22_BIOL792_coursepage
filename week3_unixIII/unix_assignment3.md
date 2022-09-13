@@ -32,7 +32,7 @@ Lets go back to the `sample_passerina.fastq` file you were working with last wee
 
 ## 2. Pipes ("|"): moving **stdout** from one command into another.
 
-Decompress sample_passerina.fastq.gz and try each of the commands below, striving to understand what each  is doing. The sections in Haddock and Dunn, or the regular expression cheat sheat under [unix resources](https://github.com/tparchman/BIOL792/tree/master/unix_resources) on the github page will help you understand what `^` and `[ ]` mean for regular expressions. In addition, you will want to learn what the `tr` command does.
+Decompress (using `gunzip`) sample_passerina.fastq.gz and try each of the commands below, striving to understand what each is doing. The sections in Haddock and Dunn, or the regular expression cheat sheat under [unix resources](https://github.com/tparchman/BIOL792/tree/master/unix_resources) on the github page, will help you understand what `^` and `[ ]` mean for regular expressions. In addition, you will want to learn what the `tr` command does.
 
     $ grep ^@ sample_passerina.fastq | wc -l   
 
