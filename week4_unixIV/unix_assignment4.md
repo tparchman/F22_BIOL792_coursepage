@@ -41,7 +41,7 @@ For this, we will work with a directory populated with remote sensed climate dat
 
  You will want this script to be executed so that you feed it all .txt files simultaneously as arguments from the command line:
 
-    $ bash mac2unix_line_endings *.txt
+    $ bash mac2unix_line_endings.sh *.txt
     
 For help on writing a script that can handle multiple arguments from the command line refer to **section 5** of `unixIV_primer.md`. You can simply use `tr` to do this as above, but instead of just executing this from the command line for one file, you will have written a program that can do this for many files at a time. Name this script `mac2unix_line_endings.sh`, and save it for future use (you will find this repeatedly useful). You will make use of $@ (an array of arguments from the command line, the file names in this case) and a loop that processes each file, one at a time.
 
