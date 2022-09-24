@@ -1,16 +1,5 @@
-# Why Python ?
 
-The idea of this course is to introduce biologists without any, or much, prior programming experience to a language that can be useful for their needs. The choice of the first programming language to learn may not be as important as you think; once you have learned one, learning additional languages will be much much easier, and you are nearly guaranteed to utilize additional languages at some point in your career. Nonetheless, the two scripting languages that have been most heavily used in bioinformatics and data science are **Perl** and **Python**. I have primarily used Perl for my needs, and have taught this course with Perl in the past. However, given a general shift in usage trends and training opportunities, beginning this semester, Ive decided to shift to Python. There are a number of reasons for this:
-
-- It is one of the most common languages used in biology and other fields of science. Thus, you will be able to find a lot of documentation, guidance, examples, and opinion on the web.
-- It has excellent capabilities for manipulating text, suiting it well to bioinformatics and data science.
-- It uses consistent syntax, which makes learning specific code relatively easy.
-- It has many built in libraries to facilitate common tasks
-- Python is very widely used, across science and inustry. 
-
-<p>&nbsp;</p>
-
-# Getting started with Python. 
+# Getting started with Python 
 
 ## Topics to cover
 - installing/updating python
@@ -19,7 +8,7 @@ The idea of this course is to introduce biologists without any, or much, prior p
 - controlling float precision
 - using the interactive prompt to test code in the terminal
 - `help()` and `dir()`
-- Haddock and Dunn chapter 8, and first few pages of chapter 9
+- Haddock and Dunn chapter 8, and first half of chapter 9
 <p>&nbsp;</p>
 
 # 1. Installing/updating to python 3 current version
@@ -119,6 +108,8 @@ Anytime you use `#`, the rest of the line will be 'commented out'. This means py
 In example code below and in other primers, I have put comments to describe some code using `#`.
 
     print ("This is python code")  # this is a comment to describe the left
+
+    #Another commment, uses the whole line, maybe describes code below/above.
 
 <p>&nbsp;</p>
 
@@ -282,7 +273,7 @@ In python, floats can be represented with full precision, or controlled to a set
     print ("2/3 should equal roughly %.3f" % (Prod))
     # This will print "2/3 should equal roughly 0.667"
 
-# 5. Using the interactive prompt to test statements or blocks of code outside of your scripts, and/or to get help (`help()`, `dir()`)
+## 5. Using the interactive prompt to test statements or blocks of code outside of your scripts, and/or to get help (`help()`, `dir()`)
 
 ### 5A. A useful feature of python is the interactive prompt, which you can invoke by simply typing python (or python3, depending on your set up), as below.
 
