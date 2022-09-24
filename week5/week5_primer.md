@@ -1,12 +1,12 @@
 # Why Python ?
 
-The idea of this course is to introduce biologists without any, or much, prior programming experience to a language that can be useful for their needs. The choice of the first programming to learn may not be as important as you think; once you have learned one, learning additional languages will be much much easier, and you are nearly guaranteed to utilize additional languages at some point in your career. Nonetheless, the two scripting languages that have been most heavily used in bioinformatics and data science are **Perl** and **Python**. I have primarily used Perl for my needs, and have taught this course with Perl in the past. However, given a general shift in usage trends and training opportunities, beginning this semester, Ive decided to shift to Python. There are a number of reasons for this:
+The idea of this course is to introduce biologists without any, or much, prior programming experience to a language that can be useful for their needs. The choice of the first programming language to learn may not be as important as you think; once you have learned one, learning others will be much much easier, and you are nearly guaranteed to utilize additional languages at some point in your career. Nonetheless, the two scripting languages that have been most heavily used in bioinformatics and data science are **Perl** and **Python**. I had primarily used **Perl** for my needs, and have taught this course with Perl in the past. However, given a general shift in usage trends and training opportunities, beginning this semester, Ive decided to shift to Python both for teaching and for research purposes. There are a number of reasons for this:
 
-- It is one of the most common languages used in biology and other fields of science. Thus, you will be able to find a lot of documentation, guidance, examples, and opinion on the web.
-- It has excellent capabilities for manipulating text, suiting it well to bioinformatics and data science.
+- It is one of the most common languages used in biology and other fields of science. Thus, you will be able to find a lot of documentation, guidance, examples, and opinion on the web (see useful resources at the bottom of this page).
+- It has excellent capabilities for manipulating text, suiting it well to bioinformatics and data science more generally.
 - It uses consistent syntax, which makes learning specific code relatively easy.
 - It has many built in libraries to facilitate common tasks
-- Python is very widely used, across science and industry. 
+- Python is very widely used, across science, industry, and life in general 
 
 <p>&nbsp;</p>
 
@@ -19,13 +19,13 @@ The idea of this course is to introduce biologists without any, or much, prior p
 - Haddock and Dunn chapter 8, and first few pages of chapter 9
 
 # 1. Installing/updating to python 3 current version
-As we did with Unix, we are going to start slow and basic, ramping up as the weeks go on. First we are going to make sure everyone has the most recent version of Python installed. While doing this, we are going to take a slight detour to learn how incredibly easy it can be to download and install packages for Unix commands or programs that are not installed in the base system. For this, we will demonstrate the use of `brew`, which is command line utility for locating, downloading, and installing Unix packages on Mac computers.
+As we did with Unix, we are going to start slow and basic, ramping up as the weeks go on. First we are going to make sure everyone has the most recent version of Python installed. While doing this, we are going to take a slight detour to learn how incredibly easy it can be to download and install packages for Unix commands or programs that are not installed in the base system. For this, we will demonstrate the use of `brew`, which is command line utility for locating, downloading, and installing Unix packages on Mac computers. See past primers for guides on using `apt-get` (Linux) and `yum` (CentOS).
 
 First check to see if you have python3 installed.  Open the shell and type
 
     $ python --version
 
-If you get anyting that looks like version 2 not 3 or if you get an error that you dont have python. Then you will need to install version 3.
+If you get anyting that looks like version 2 not 3 or if you get an error that you dont have python, you will need to install version 3.
 
 
 ## Installing or updating Python on Mac Unix using homebrew
@@ -40,10 +40,10 @@ If you dont have it, then:
 
 Then install python3 
 
-    $ brew install python3bcftools/1.9
+    $ brew install python3
 
 
-### Python downloads, also useful potentially 
+### Python downloads, also potentially useful
 Go to python.org and download the latest release
 
     https://www.python.org/downloads/mac-osx
@@ -52,7 +52,7 @@ Go to python.org and download the latest release
 ## Ubuntu
 It is probably already installed but if not try with the package manager `apt-get`
 
-    $ sudo apt-get install python idle
+    $ sudo apt-get install python3 idle
 	
 # 2. Writing your first python program
 
@@ -84,7 +84,7 @@ And run as follows:
 
 ## Your first simple program, using a `print` statement.
 
-Sending information from your python scripts to stdout is accomplished with the `print` function. Our first script will simply illustrate how we print specified text, and will serve to convince you that this might not be as hard as you thought it was. Use `touch` to make a blank text file, but give it a `.py` extension as is customary for python scripts. This script needs only two simple parts. First, your customary first line that should go in all of your scripts, which should be:
+Sending information from your python scripts to stdout is accomplished with the `print` function. Our first script will simply illustrate how to print specified text, and will serve to convince you that this might not be as hard as you thought it was. Use `touch` to make a blank text file, but give it a `.py` extension as is customary for python scripts. This script needs only two simple parts. First, your customary first line that should go in all of your scripts, which should be:
 
     #!/usr/bin/env python3
 Or the path to the specific location where python lives:
@@ -99,7 +99,7 @@ Note the line above will not be part of the interpretted code. Instead, you can 
 
 Now lets add a print statement:
 
-    print ("Im ready to learn python, and this is my first step")
+    print ("It is time to learn Python")
 
 You can now run your program in two ways. Simply (which we strongly recommend for this class):
 
@@ -110,7 +110,7 @@ Or, change to executable, then run:
     $ chmod u+x first_script.py
     $ ./first_script.py
 
-If all is in order, "Im ready to learn python, and this is my first step should print to the screen", and you are ready for more.
+If all is in order, "t is time to learn Python" should print to the screen, and you are ready for more.
 
 
 <p>&nbsp;</p>
