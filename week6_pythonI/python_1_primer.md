@@ -125,7 +125,7 @@ Chapter 8 of Haddock and Dunn does a nice job of walking you through a script th
 <p>&nbsp;</p>
 
 ## 3A. Strings 
-Strings can be specified and assigned easily within scripts as below. Note that " or ' can be used to enclose strings, and strings not enclosed will return undefined.
+Strings can be specified and assigned easily within scripts as below. Note that " or ' can be used to enclose strings, and strings not enclosed will return undefined. Note for these examples, working from the python interactive prompt or using the Ipy terminal application within anaconda navigator will allow you to test and play accordingly.
 
     Team = "lakers"
     Seq_one = "actgaaa"
@@ -144,12 +144,10 @@ Strings can be repeated with `*`:
 
 
 
-### Python has a diverse array of string methods, or functions, that allow efficient work with strings. A few examples below will illustrate the syntax for using these methods. 
+Python has a diverse array of string methods, or functions, that allow efficient work with strings. A few examples below illustrate the syntax for using these methods. 
 
+For the example syntax below, `str` represents a generic string variable name, the function name occurs after the `.`, and `()` are either left empty or are used to pass additional arguments to the function. 
 
-### For the example syntax below, `str` represents a generic string variable name, the function name occurs after the `.`, and `()` are either left empty or are used to pass additional arguments to the function. 
-
-<p>&nbsp;</p
 
 `str.upper()` will convert string to uppercase:
 
@@ -159,7 +157,7 @@ Strings can be repeated with `*`:
 
     Seq_one_lower = Seq_one_big.lower()
 
-`str.replace()` will replace a specified character with a different specified character:
+`str.replace()` will replace a specified character with a different specified character (below will replace a with g):
 
     NewSeq_one = Seq_one.replace("a","g")
     print ("Use of str.replace: ", NewSeq_one)
@@ -175,15 +173,10 @@ Strings can be repeated with `*`:
     print ("Use of str.alnum: ", Seq_one_alphanum_test)
 
 
-`str.count()` will count the number of occurences of a specific character. The character is passed in quotes within `()` as an argument.
-
-    Seq_one_ct_a = Seq_one.count('a')
-    print ("Use of str.count: ", Seq_one_ct_a)
-
 <p>&nbsp;</p>
 
 ## 3B. Basic mathematical operations
-Basic mathematical operations work mostly as expected, and can be usefully tested using interactive prompt from the terminal (see below).  
+Basic mathematical operations work mostly as expected, and can be usefully tested using interactive prompt from the terminal or the Ipy terminal prompt (see below).  
 
 
 | Arithmetic | Operators |
