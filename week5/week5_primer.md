@@ -122,16 +122,17 @@ If all is in order, "t is time to learn Python" should print to the screen, and 
 
 Python has command line interactive prompt (we will get into this next week), but I suggest using one of these additional tools to aid your exploration of Python syntax while writing scripts or testing code.
 
-Download the [Anaconda Navigator](https://www.anaconda.com/products/individual-d) suite of tools. From within this you can start the Spyder IDE and or the Jupyter QtConsole from the launch menu.
+Download the [Anaconda Navigator](https://docs.anaconda.com/anaconda/navigator/) suite of tools. From within this you can start the Spyder IDE and or the Jupyter QtConsole from the launch menu.
 
 
 # Python documentation and other useful resources. 
 
-I strongly recommend you explore several of the below resources and tutorials. They ALL can and will facilitate your progress greatly.
+I strongly recommend you explore several of the below resources and tutorials. They will all facilitate your progress greatly.
 
 [Python documentation](https://www.python.org/doc/)
 
-[Python for Biologists](https://pythonforbiologists.com/introduction)
+[Python for Biologists](https://pythonforbiologists.com/tutorial.html)
+- Excellent tutorials and primers for introductory python. Follows similar topics to what cover in this class, with lots of variation on themes.
 
 [Learn Python Interactive](https://www.learnpython.org/)
  - This has a built in interpretter, so you can test code or play with code under the tutorial examples. Excellent resource.
