@@ -120,15 +120,15 @@ For students who are quarantining or self-isolating due to 1) COVID 19 infection
 | Week 2  |	Sep. 6, Sep. 8      | Unix II                        |               |
 | Week 3  |	Sep. 13, 15	   | Unix III                       | Homework 1   |
 | Week 4  |	Sep. 20, 22	   | Unix IV                        | Homework 2   |
-| Week 5  |	Sep. 27, 29	   | Python I                       | Homework 3;  *1-2 page project description | 
+| Week 5  |	Sep. 27, 29	   | Python I                       | Homework 3 | 
 | Week 6  |	Oct. 4, 6           | Python II	                    | Homework 4     
-| Week 7  |	Oct. 11, 13	   | Python III                     | Homework 5
+| Week 7  |	Oct. 11, 13	   | Python III                     | Homework 5; *1-2 page project description
 | Week 8  |	Oct. 18, 20	   | Python IV                      | Homework 6 |
-| Week 9  |	Oct. 25, 27	   | Python V	                    | Homework 7 |  
+| Week 9  |	Oct. 25, 27	   | Python V, Data science careers	                    | Homework 7 |  
 | Week 10 |	Nov. 1, 3	   | Python VI                      | Homework 8 |
 | Week 11 | Nov. 8, 10      | Python VII                     | Homework 9 |
-| Week 12 | Nov. 15, 17    | Population genetics workflow   | nothing |
-| Week 13 | Nov. 22	   | Population genetics cont.  | nothing
+| Week 12 | Nov. 15, 17    | Jupyter, Rmarkdown   | nothing |
+| Week 13 | Nov. 22	   | Population genetics workflow | nothing
 | Week 14 | Nov. 29, Dec. 1	       | HPC/Pronghorn/Project prep | 
-| Week 15 | Dec. 6,	8   | Project prep/presentation  | Homework 10, projects due
+| Week 15 | Dec. 6,	8   | Project prep/presentation  | projects due
 | Week 16 | Dec. 13	       | Present Projects		          |   *projects due
