@@ -11,19 +11,19 @@
 # 1. Lists
 Lists store vectors of information, and you will commonly use them. They are convenient because they can be used with loops to execute the same blocks of code on each element.
 
-Hardcoding lists within your scripts is good for learning, although once you start working with real data you will learn to build lists quickly on the fly. To build lists, we enclose the set in brackets. The contents of a list can be a mixture of data types, although you will usually work with lists of only one type (strings, integers, floats).
+Hardcoding lists within your python code is good for learning, although once you start working with real data you will learn to build lists quickly on the fly. To build lists, we enclose the set in brackets. The contents of a list can be a mixture of data types, although you will usually work with lists of only one type (strings, integers, floats).
 
     NameList = ['Jim', 'Bob', 'Amy', 'Beth']    # list of strings
     NumList = [9, 28, 18, 83, 85]   # list of integers
     BothList =['Jim', 'Bob', 'Amy', '3', '5', '7']
 
-List elements are accessed by their indeces, 0 coming before the first list element. Rather than thinking of each element as matching its index, think of the indeces as representing the boundaries between elements. (see page 159 of Haddock and Dunn for explanation)
+List elements are accessed by their indeces, 0 coming before the first list element. Rather than thinking of each element as matching its index, think of the indeces as representing the boundaries between elements. (see page 159 of Haddock and Dunn for additional explanation)
 
     List=['a', 'b', 'c', 'd', 'e']
     print(List[0])  # will print a
     print(List[2])  # will print c
  
-List elements are accessed by their indices, -1 is the last list element.
+List elements can be accessed by specifying elements based on their distance from the beginning or end of the list accessed by their indices. For example -1 is the last list element.
 
     List=('a', 'b', 'c', 'd', 'e')
     print(List[-1])  # will print e
@@ -71,21 +71,22 @@ Note that strings and lists store information in a similar manner (See Haddock a
 
 Another value can be added to specify interval between integers.
 
-    RanList = list(range(0,20,2))
-    print(RanList) # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+    SeqList = list(range(0,20,2))
+    print(SeqList) # [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 
 `append()` used to add elements to the end of an array
 
     Breeds=['labrador', 'golden', 'flatcoat', 'chesapeake']
     Breeds.append('curlycoat') #adds 'curlycoat')
+    print(Breeds)
 
 Joining two lists together is very simple, just use `+`
 
     List1 = ["a", "b" , "c"]
-    List1 = [1, 2, 3]
+    List2 = [1, 2, 3]
 
     List3 = List1 + List2
-    print(list3)
+    print(List3)
 
 `del()` removes any specified elements from a list
     
@@ -155,9 +156,11 @@ Logical operators, as listed below are also useful in conditional statements.
 
 # 3. `for`
 
-### `for` can be used with lists, and even strings at some points. Unlike the conditional statements above, `for` is used to loop (or iterate) through a data structure, executing the same block of code on each item. Python uses indentation in an inflexible manner (other languages often use curly brackets with indentation optional) to set apart code inside `for` loops. A common error in your python code will come from incorrect indentation.
+### `for` can be used with lists, and even strings at some points. Unlike the conditional statements above, `for` is used to loop (or iterate) through a data structure, executing the same block of code on each item. Python uses indentation in an **inflexible** manner (other languages often use curly brackets with indentation optional) to set apart code inside `for` loops. A common error in your python code will come from incorrect indentation.
 
-### Using `for` to loop through a string. The code below should print each base in the DNA string on its own line of output.
+### Using `for` to loop through a string:
+
+ The code below should print each base in the DNA string on its own line of output.
 
     DNA = "ATCGGGAAACC"
     for Seq in DNA: 
