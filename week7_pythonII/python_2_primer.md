@@ -92,7 +92,7 @@ Joining two lists together is very simple, just use `+`
     
     del(Breeds[:2]) #removes the first two elements
 
-`.sort()` can be used to sort the elements of a list. Try it with the code below, note that this function doesn't return anything, but changes the order of the list indeces on the fly.
+`.sort()` can be used to sort the elements of a list. Try it with the code below, note that this function doesn't return anything, but changes the order of the list indeces on the fly. In otherwords, applying the function reverses the order of the original list without needing to create an additional list.
 
     Breeds.sort()
     print(Breeds)
