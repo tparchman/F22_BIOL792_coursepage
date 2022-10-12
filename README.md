@@ -126,9 +126,9 @@ For students who are quarantining or self-isolating due to 1) COVID 19 infection
 | Week 8  |	Oct. 18, 20	   | Python IV                      | Homework 6 |
 | Week 9  |	Oct. 25, 27	   | Python V, Data science careers	                    | Homework 7 |  
 | Week 10 |	Nov. 1, 3	   | Python VI                      | Homework 8 |
-| Week 11 | Nov. 8, 10      | Python VII                     | Homework 9 |
+| Week 11 | Nov. 8, 10      | Python VII (pandas/numpy)                    | Homework 9 |
 | Week 12 | Nov. 15, 17    | Jupyter, Rmarkdown   | nothing |
-| Week 13 | Nov. 22	   | Population genetics workflow | nothing
+| Week 13 | Nov. 22	   | Python VIII | nothing
 | Week 14 | Nov. 29, Dec. 1	       | HPC/Pronghorn/Project prep | 
 | Week 15 | Dec. 6,	8   | Project prep/presentation  | projects due
 | Week 16 | Dec. 13	       | Present Projects		          |   *projects due
