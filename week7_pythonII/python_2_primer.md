@@ -1,4 +1,4 @@
-# Python primer II, Data Science I, Fall 2020. 
+# Python primer II, Data Science I 
 
 ## Topics to cover
 - lists
@@ -166,7 +166,7 @@ Logical operators, as listed below are also useful in conditional statements.
     for Seq in DNA: 
         print(Seq)
 
-### You will often use `for` to loop through arrays. The syntax is similar to above. Lets make a list of numbers and loop through it.
+### You will often use `for` to loop through lists. The syntax is similar to above. Lets make a list of numbers and loop through it.
 
     RanList = list(range(0,100))   
     for Num in RanList:
