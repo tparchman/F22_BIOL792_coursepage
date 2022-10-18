@@ -1,4 +1,4 @@
-# Python primer III, Data Science I, Fall 2020. 
+# Python primer III, Data Science I 
 
 ## Topics to cover
 - working with files (input/output)
@@ -18,8 +18,9 @@ For almost every task you attempt with Python, you will need to 1) open and read
 
 Input involves several steps
 
-- **A.** assigning the name of the file to a variable (based on its location), and opening a connection to the file (creating a file object with `open()`)
-- **B.** reading the contents of the file with `.read`, using one of several built in methods (detailed below)
+**A.** assigning the name of the file to a variable (based on its location), and opening a connection to the file (creating a file object with `open()`)
+
+**B.** reading the contents of the file with `.read` or using a `for` loop, using one of several available methods in Python(detailed below)
 <p>&nbsp;</p>
 
 ### A. Establishing file handles: `open()`can be used to open a connection (also could be called a file handle) to files stored in directories on your computer. 
@@ -41,7 +42,19 @@ Of course, you can also use an absolute path:
 
 <p>&nbsp;</p>
 
-A strength of python is the enormous number of libraries/packages that exist to facilitate specific tasks. We will soon start to learn more about more libraries in Python; here we will introduce a commonly used library and the process of importing libraries.
+A strength of python is the enormous number of libraries/packages that exist to facilitate specific tasks. We will soon start to learn more about more libraries in Python; here we will introduce a commonly used library and the process of importing libraries. Importing a library into your python scrip is done with a simple line (below, import function, followed by name of library):
+
+    import sys
+
+Such library statements are typically placed at the top of python scripts. As time goes on, you may find yourself importing multiple libraries:
+
+    import sys
+    import numpy
+    import pandas
+
+Or, you can input all on one line:
+
+    import sys, numpy, pandas
 
 Command line arguments can be accessed from you code using `argv` function of the `sys` library. `sys.argv` allows you to directly access a list of command line arguments.  
 
@@ -120,7 +133,7 @@ The below code provides a simple example of specifying a file for reading, openi
 Below are three lines of code to 1. create a file name, 2. make a file object, or connection, from your code to that file, and 3. read all contents of that file into a single scalar. Each line below is described as a reminder of how they differ.
 
     input_file= "~/python_practice/DNA_seq_allosaurus.fasta"
-    IN = open(input_file)
+    IN = open(input_file, 'r')
     my_file_contents = IN.read()
 
 1). Create file name pointing to location on device:
@@ -129,7 +142,7 @@ Below are three lines of code to 1. create a file name, 2. make a file object, o
 
 2). Makin a file object, or connection, from your code to that file:
 
-    IN = open(input_file)
+    IN = open(input_file, 'r')
 
 3). Using the `.read()` function to read all contents of that file into a single scalar:
 
@@ -177,6 +190,7 @@ It may take some experience before you realize that closing files  when you are 
 
 The code below gives an example of looping through every line in a file.
 
+    Infile=open(sys.argv[1], 'r')
 	for Line in InFile:
 		Line = Line.strip('\n') #removing line ending
 		
