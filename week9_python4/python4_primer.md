@@ -81,7 +81,7 @@ Match objects have multiple elements, which can be individually extracted:
     Seqmatch=re.search('ATC', Seq)
     print(Seqmatch.start())  # prints start position of match
     print(Seqmatch.group()) # prints matched string group
-    print(Seqmatch.end()) # prints matched string group
+    print(Seqmatch.end()) # prints end position of match in string
 Note that above, `re.search` only stores one ATC, even though there are 3 in Seq. Thats because `re.search` only makes one match. `re.findall` and `re.finditer` to find, track, and store multiple matches. More on these below.
 
 ### Using `r""` to search raw text only.
@@ -123,9 +123,9 @@ Syntax for regular expressions is mostly consistent across many languages, inclu
 
 ## A note on special characters
 
-Special characters require a `\` escape in regular expressions. Thus, matching '&' in a string of text requires an expresssion such as "\&". In addition, `\` is used to indicate certain special characters such as line endings, tabs, and other characters listed above. Examples below.
+Special characters require a `\` escape in regular expressions. Thus, matching '&' in a string of text requires an expresssion such as "\\&". In addition, `\` is used to indicate certain special characters such as line endings, tabs, and other characters listed above. Examples below.
 
-So in the string below, specifying search with "\@" will produce a match, while using "@" will not. Try it out to convince yourself.
+So in the string below, specifying search with "\\@" will produce a match, while using "@" will not. Try it out to convince yourself.
 
     Seq = '@ATCGGGGGGATCGGGATC'
     re.search("\@", Seq)   # returns a match
@@ -146,7 +146,7 @@ So in the string below, specifying search with "\@" will produce a match, while 
 
 
 
-Example usage. If you run the same searches below without "\" you will see that no match will be returned.
+Example usage. If you run the same searches below without "\\" you will see that no match will be returned.
 
     X = "COD * ? + \n"
     if re.search("\+", X):  
@@ -161,7 +161,7 @@ Example usage. If you run the same searches below without "\" you will see that 
 
 `re.search` is useful for finding out if a pattern exists in a string or a line of data, and it can store a single match, but its usefulness is limited to a single match. `re.finditer()` can process multiple matches and usefully returns a list of match objects which can be further processed in a loop.
 
-The below expression matches to characters that are NOT A, T, C or G, and the for loop is used to print each match and its starting position.
+The below expression matches to characters that are NOT A, T, C or G, and the for loop is used to print each match and its starting position. Note that the "^" character when used inside a character class means "NOT" instead of serving as an anchor.
 
     Seq = "CGCTCNTAGATGCGCRATGACTGCAYTGC" 
 

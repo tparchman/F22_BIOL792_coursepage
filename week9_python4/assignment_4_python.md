@@ -7,8 +7,7 @@
 - `sys.argv`, `re.search`
 <p>&nbsp;</p>
 
-# Summarizing DNA sequence motifs in genomes‬‬‬‬‬‬
-‬
+# Summarizing DNA sequence motifs in genomes
 This week we will work with DNA sequence data from several different species. These are coding DNA sequences, and happen to be from a bird (Manacus vitellinus; Manacus_vitellinus.gene.cds.fa.gz) and two pines (Pinus contorta; contorta_454.fa.gz, and Pinus taeada; Pta.seq.uniq.gz). You can pull these from the course website (you will need to `gunzip` them). The data sets are either from whole genome or whole transcriptome sequencing projects, and represent most of the protein coding sequence.
 <p>&nbsp;</p>
 
