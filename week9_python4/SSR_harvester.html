@@ -14267,14 +14267,15 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Importing-libraries-sys-and-re.-sys-for-accessing-command-line-arguments-and-re-for-regular-expression-work.">Importing libraries <code>sys</code> and <code>re</code>. sys for accessing command line arguments and re for regular expression work.<a class="anchor-link" href="#Importing-libraries-sys-and-re.-sys-for-accessing-command-line-arguments-and-re-for-regular-expression-work.">&#182;</a></h3>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">re</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;sys and re libraries imported.&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14282,15 +14283,36 @@ a.anchor-link {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>sys and re libraries imported.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Initializing-the-variables-that-will-be-global-(meaning-they-will-live-in-and-outside-of-the-for-loops-below)">Initializing the variables that will be global (meaning they will live in and outside of the for loops below)<a class="anchor-link" href="#Initializing-the-variables-that-will-be-global-(meaning-they-will-live-in-and-outside-of-the-for-loops-below)">&#182;</a></h3>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">SeqNo</span> <span class="o">=</span> <span class="mi">0</span>
@@ -14300,11 +14322,33 @@ a.anchor-link {
 <span class="n">AT</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">ATC</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">GA</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This set of variables has been initialized.&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>This set of variables has been initialized.
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14312,14 +14356,15 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Creating-file-handles-to-a-file-to-read-in-from-the-command-line,-and-for-a-file-to-write-to.-The-command-line-argument-would-need-to-be-provided-when-a-script-is-executed-from-terminal.">Creating file handles to a file to read in from the command line, and for a file to write to. The command line argument would need to be provided when a script is executed from terminal.<a class="anchor-link" href="#Creating-file-handles-to-a-file-to-read-in-from-the-command-line,-and-for-a-file-to-write-to.-The-command-line-argument-would-need-to-be-provided-when-a-script-is-executed-from-terminal.">&#182;</a></h3>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">IN</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;Manacus_vitellinus.gene.cds.fa&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span>
 <span class="n">OUT</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;SSR_out.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This block of code has run.&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14327,15 +14372,37 @@ a.anchor-link {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>This block of code has run.
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Using-a-for-loop-to-read-in-one-line-at-a-time-from-IN">Using a <code>for</code> loop to read in one line at a time from IN<a class="anchor-link" href="#Using-a-for-loop-to-read-in-one-line-at-a-time-from-IN">&#182;</a></h3>
+<h3 id="Using-a-for-loop-to-read-in-one-line-at-a-time-from-IN,-then-using-conditionals-with-regular-expressions.">Using a <code>for</code> loop to read in one line at a time from IN, then using conditionals with regular expressions.<a class="anchor-link" href="#Using-a-for-loop-to-read-in-one-line-at-a-time-from-IN,-then-using-conditionals-with-regular-expressions.">&#182;</a></h3><p>The code below if uses <code>re.findall</code> to store matches in lists, and by using <code>len</code>, count the number of matches in each list. So, the <code>AT</code> variable below will store the number of matches to AT SSRs with 6 repeats for each DNA sequence, going one line at a time. <code>TAT += AT</code> then keep a running tally, over all lines, for that match. AFter the <code>for</code> loop is complete, <code>TAT</code>, <code>TATC</code>, and <code>TGA</code> will have the total number of matches to each of those motifs for the entire file.</p>
+
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">Line</span> <span class="ow">in</span> <span class="n">IN</span><span class="p">:</span>
@@ -14367,10 +14434,10 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Printing-summary-of-results-for-entire-transcriptome-(file)">Printing summary of results for entire transcriptome (file)<a class="anchor-link" href="#Printing-summary-of-results-for-entire-transcriptome-(file)">&#182;</a></h2>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;File has </span><span class="si">%d</span><span class="s2"> AT SSRs, </span><span class="si">%d</span><span class="s2"> ATC SSRs and, and </span><span class="si">%d</span><span class="s2"> GA SSRs   </span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">TAT</span><span class="p">,</span> <span class="n">TATC</span><span class="p">,</span> <span class="n">TGA</span><span class="p">))</span>
@@ -14379,6 +14446,28 @@ a.anchor-link {
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>File has 7 AT SSRs, 327 ATC SSRs and, and 187 GA SSRs   
+
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -14394,6 +14483,20 @@ a.anchor-link {
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">IN</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 <span class="n">OUT</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 
      </div>
