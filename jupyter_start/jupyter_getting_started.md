@@ -61,7 +61,14 @@ Variables generated and stored in previous code boxes, however, are available in
 
 ## Exporting from `Jupyter`
 
-There are options for exporting different types of files from `Jupyter`.
+There are options for exporting and downloading different types of files from `Jupyter`. The `download as` option under the `file` tab lists a menu of options. 
+
+![My Image](images/download_as_menu.png)
+
+If you download as `.py` will generate a text file that is a pythong script. Code and markdown text will be identical, but the markdown boxes will all be converted to comment lines.
+
+![My Image](images/download_as_py.png)
+
 
 
 ## 
