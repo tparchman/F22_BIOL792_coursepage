@@ -1,11 +1,11 @@
-## Jupyter notebooks to organize and annotate python
+# Jupyter notebooks to organize and annotate python
 
 Jupyter notebooks offer an environment where you can write, run, and annotate python code using code boxes that can be specified as either markdown or python. It is ideal for providing descriptions or annotations of code in easily readable markdown
 
 
 ## Installing Jupyter
 
-Jupyter is an independent software for writing and executing python and markdown code. Before you can get started writing and displaying code using Jupyter notebooks, you will need to install this software. Below are three ways to approach this.
+Jupyter is an independent software for writing and executing python and markdown code. Before you can get started writing, running and displaying code and markdown text using Jupyter notebooks, you will need to install the software. Below are a few ways to approach this.
 
 
 I. If you prefer command line access and opening files from the command line, you can easily install `Jupyter` using `pip`, `brew`, or `conda`. 
@@ -14,11 +14,15 @@ Install with `pip` (installation tool built into python).
 
     $ pip install jupyter
 
-Once `Jupyter` is installed, you can open a notebook from anywhere with:
+Once `Jupyter` is installed, you can open a new notebook from anywhere with:
 
     $ jupyter-notebook
 
 You can click the `new` button on the top right of this window, and select `python3` to open an untitled workbook in the current working directory. You can save this file as whatever you like (in the current working directory) by clicking on `save as` under the `file` menu.
+
+To open an already existing `Jupyter Notebook` from the command line, follow the example below. Note that the file extension for `Jupyter Notebook` files is `.ipynb`.
+
+    $ jupyter-notebook pandas_demo.ipynb
 
 II. Many of you have already installed the Anaconda Navigator suite of GUI applications. You can start Jupyter from the `Jupyter Notebook` icon in the application menu. 
 
@@ -32,6 +36,8 @@ Once you do that, a `Jupyter` server will launch on your screen that will displa
 Once you open a new `Jupyter Notebook` it will display a menu at the top and a blank box with a cursor. There is a drop down menu on the right where you can switch between code and markdown to control how you what you type in each box is interpretted, shown in the image below. 
 
 ![My Image](images/code_md_menu.png)
+
+
 
 ## Writing markdown in code boxes
 
