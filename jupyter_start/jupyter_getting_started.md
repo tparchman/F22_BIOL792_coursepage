@@ -22,7 +22,12 @@ You can click the `new` button on the top right of this window, and select `pyth
 
 To open an already existing `Jupyter Notebook` from the command line, follow the example below. Note that the file extension for `Jupyter Notebook` files is `.ipynb`.
 
-    $ jupyter-notebook pandas_demo.ipynb
+    $ jupyter-notebook logger_jupyter.ipynb
+
+Once you do that, the specified file with open in `Jupyter`
+
+
+![My Image](images/jupyter_file.png)
 
 II. Many of you have already installed the Anaconda Navigator suite of GUI applications. You can start Jupyter from the `Jupyter Notebook` icon in the application menu. 
 
@@ -71,9 +76,13 @@ There are options for exporting and downloading different types of files from `J
 
 ![My Image](images/download_as_menu.png)
 
-If you download as `.py` will generate a text file that is a pythong script. Code and markdown text will be identical, but the markdown boxes will all be converted to comment lines.
+If you download as `.py`, this will generate a text file that is a pythong script. Code and markdown text will be identical, but the markdown boxes will all be converted to comment lines.
 
 ![My Image](images/download_as_py.png)
+
+Downloading as html or pdf is a convenient manner to generate uneditable documents that you can share with others to demo your code, or to share a full on tutorial or workflow.
+
+![My Image](images/jupyter_html.png)
 
 
 
